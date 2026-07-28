@@ -1,0 +1,6 @@
+{
+  "name": "NRJ AI Team",
+  "description": "AI Team platform highlighting capabilities, impact, pricing, and team overview.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

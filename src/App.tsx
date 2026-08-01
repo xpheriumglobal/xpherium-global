@@ -32,7 +32,6 @@ const BusinessFunctions = lazy(() => import('./pages/BusinessFunctions'));
 const AiSolutions = lazy(() => import('./pages/AiSolutions'));
 const AiAgents = lazy(() => import('./pages/AiAgents'));
 const AutomationServices = lazy(() => import('./pages/AutomationServices'));
-const Technologies = lazy(() => import('./pages/Technologies'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 function Home() {
@@ -98,7 +97,6 @@ export default function App() {
                 <Route path="/ai-solutions" element={<AiSolutions />} />
                 <Route path="/ai-agents" element={<AiAgents />} />
                 <Route path="/automation-services" element={<AutomationServices />} />
-                <Route path="/technologies" element={<Technologies />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>

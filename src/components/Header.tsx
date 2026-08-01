@@ -16,7 +16,6 @@ const dropdownItems = [
   { label: 'AI Solutions', desc: 'Custom models & platforms', href: '/ai-solutions' },
   { label: 'AI Agents', desc: 'Autonomous workforce', href: '/ai-agents' },
   { label: 'Automation Services', desc: 'End-to-end workflows', href: '/automation-services' },
-  { label: 'Technologies', desc: 'Stack & infrastructure', href: '/technologies' },
 ];
 
 export function Header() {
@@ -376,7 +375,7 @@ export function Header() {
               Let's Build <span>→</span>
             </button>
             <div className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 flex items-center justify-between text-[11px] uppercase tracking-[0.14em] text-white/25">
-              <span>© 2026 Xpherium OS</span>
+              <span>© 2026 X-PHERIUM Global</span>
               <span className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 flex items-center gap-2">
                 <span className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 h-1 w-1 animate-pulse rounded-full bg-emerald-400" />
                 All systems operational

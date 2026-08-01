@@ -27,7 +27,7 @@ export function WhatsNow() {
           
           {/* Text */}
           <span className="text-zinc-200 text-sm md:text-base font-light tracking-wide">
-            Introducing <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#e8c07d] to-[#b88635]">Xpherium OS</span> System
+            Introducing <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#e8c07d] to-[#b88635]">X-PHERIUM Global</span> System
           </span>
         </div>
       </motion.div>
@@ -42,7 +42,7 @@ export function WhatsNow() {
       >
         <img 
           src="https://res.cloudinary.com/zzwokqrq/image/upload/Xpherium_Globlal_nipkvl.webp" 
-          alt="Xpherium OS System" 
+          alt="X-PHERIUM Global System" 
           loading="lazy"
           decoding="async"
           className="absolute inset-0 w-full h-full object-cover opacity-90 transition-all duration-700 group-hover:scale-105 group-hover:opacity-100 z-10"

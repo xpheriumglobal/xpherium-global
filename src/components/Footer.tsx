@@ -189,22 +189,6 @@ const servicesData = [
       "Custom Workflow Development",
     ],
   },
-  {
-    title: "Technologies",
-    path: "/technologies",
-    items: [
-      "n8n Automation",
-      "Make Automation",
-      "OpenAI Integration",
-      "Claude AI Integration",
-      "AI Voice Technology",
-      "MCP Solutions",
-      "API Development",
-      "Webhook Automation",
-      "Database Automation",
-      "Custom AI Integrations",
-    ],
-  },
 ];
 
 export function Footer() {
@@ -402,7 +386,7 @@ export function Footer() {
 
         <div className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 pt-2 pb-2">
           <p className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 text-[13px] leading-5 text-zinc-500">
-            © 2026 Xpherium OS. All rights reserved. Built for founders who move fast.
+            © 2026 X-PHERIUM Global. All rights reserved. Built for founders who move fast.
           </p>
         </div>
       </div>

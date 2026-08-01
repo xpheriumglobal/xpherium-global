@@ -3,15 +3,15 @@ import { useSEO } from '../hooks/useSEO';
 
 export default function Blog() {
   useSEO({
-    title: "Blog",
-    description: "Read the latest insights and news from X-Pherium OS.",
+    title: "AI Automation Insights for Business Leaders | X-PHERIUM Global ",
+    description: "Explore practical insights, strategies, and trends in AI automation, voice AI, workflow optimization, and digital transformation.",
     canonicalUrl: "/blog",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Blog | X-Pherium OS",
-      "description": "Read the latest insights and news from X-Pherium OS.",
-      "url": "https://xpherium.global/blog"
+      "name": "Blog | X-PHERIUM",
+      "description": "Read the latest insights and news from X-PHERIUM.",
+      "url": "https://xpheriumglobal.com/blog"
     }
   });
 

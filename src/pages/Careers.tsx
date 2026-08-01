@@ -4,19 +4,19 @@ import { useSEO } from '../hooks/useSEO';
 export default function Careers() {
   useSEO({
     title: "Careers",
-    description: "Join the team at X-Pherium OS and build the digital workforce.",
+    description: "Join the team at X-PHERIUM and build the digital workforce.",
     canonicalUrl: "/careers",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Careers | X-Pherium OS",
-      "description": "Join the team at X-Pherium OS and build the digital workforce.",
-      "url": "https://xpherium.global/careers"
+      "name": "Careers | X-PHERIUM",
+      "description": "Join the team at X-PHERIUM and build the digital workforce.",
+      "url": "https://xpheriumglobal.com/careers"
     }
   });
 
   return (
-    <PageLayout title="Careers" description="Join the team at X-Pherium OS.">
+    <PageLayout title="Careers" description="Join the team at X-PHERIUM.">
       <p>
         We are always looking for visionary engineers, AI researchers, and product designers to join our team. 
         If you are passionate about the future of automation and artificial intelligence, we want to hear from you.

@@ -3,15 +3,15 @@ import { useSEO } from '../hooks/useSEO';
 
 export default function BusinessFunctions() {
   useSEO({
-    title: "Business Functions",
-    description: "Optimize your business functions with our digital workforce automation.",
+    title: "Automate Every Business Function with AI | X-PHERIUM Global",
+    description: "Transform sales, customer support, marketing, HR, finance, and operations using AI-powered automation designed to eliminate inefficiency and improve performance.",
     canonicalUrl: "/business-functions",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Business Functions | X-Pherium OS",
+      "name": "Business Functions | X-PHERIUM",
       "description": "Optimize your business functions with our digital workforce automation.",
-      "url": "https://xpherium.global/business-functions"
+      "url": "https://xpheriumglobal.com/business-functions"
     }
   });
 

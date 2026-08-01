@@ -4,15 +4,15 @@ import { useSEO } from '../hooks/useSEO';
 
 export default function AboutUs() {
   useSEO({
-    title: "About Us",
-    description: "Learn more about X-Pherium OS, our mission, vision, and the team behind the digital workforce automation.",
+    title: "Built to Eliminate Repetitive Work with AI | X-PHERIUM Global",
+    description: "Discover how X-PHERIUM Global helps businesses eliminate repetitive work through AI automation, intelligent workflows, and digital workforces that increase productivity and reduce operational costs.",
     canonicalUrl: "/about",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "AboutPage",
-      "name": "About X-Pherium OS",
-      "description": "Learn more about X-Pherium OS, our mission, vision, and the team behind the digital workforce automation.",
-      "url": "https://xpherium.global/about"
+      "name": "About X-PHERIUM",
+      "description": "Learn more about X-PHERIUM, our mission, vision, and the team behind the digital workforce automation.",
+      "url": "https://xpheriumglobal.com/about"
     }
   });
 

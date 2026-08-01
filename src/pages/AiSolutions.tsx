@@ -5,15 +5,15 @@ import { ArrowRight, Users, Bot, Workflow, Sparkles, Layers, TrendingUp, Headset
 
 export default function AiSolutions() {
   useSEO({
-    title: "Ai Solutions",
-    description: "Explore our AI solutions for enterprise automation and search optimization.",
+    title: "Replace Manual Work with Intelligent AI Solutions | X-PHERIUM Global",
+    description: "Empower your business with AI solutions that automate repetitive tasks, improve customer experiences, and create scalable operations built for long-term growth.",
     canonicalUrl: "/ai-solutions",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Ai Solutions | X-Pherium OS",
+      "name": "Ai Solutions | X-PHERIUM",
       "description": "Explore our AI solutions for enterprise automation and search optimization.",
-      "url": "https://xpherium.global/ai-solutions"
+      "url": "https://xpheriumglobal.com/ai-solutions"
     }
   });
 

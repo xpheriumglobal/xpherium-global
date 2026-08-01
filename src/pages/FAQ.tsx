@@ -24,8 +24,8 @@ const faqData = [
 
 export default function FAQ() {
   useSEO({
-    title: "F A Q",
-    description: "Frequently asked questions about X-Pherium OS and our services.",
+    title: "Frequently Asked Questions About AI Automation | X-PHERIUM Global",
+    description: "Get answers about AI automation, pricing, implementation, integrations, AI voice agents, security, and business automation services.",
     canonicalUrl: "/faq",
     jsonLd: {
       "@context": "https://schema.org",

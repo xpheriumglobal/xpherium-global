@@ -3,15 +3,15 @@ import { useSEO } from '../hooks/useSEO';
 
 export default function AiAgents() {
   useSEO({
-    title: "Ai Agents",
-    description: "Meet the AI agents powering the X-Pherium OS digital workforce.",
+    title: "AI Voice Agents That Never Miss a Customer | X-PHERIUM Global",
+    description: "Deploy AI voice agents that answer every call, qualify leads, book appointments, and provide 24/7 customer support without increasing payroll.",
     canonicalUrl: "/ai-agents",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Ai Agents | X-Pherium OS",
-      "description": "Meet the AI agents powering the X-Pherium OS digital workforce.",
-      "url": "https://xpherium.global/ai-agents"
+      "name": "Ai Agents | X-PHERIUM",
+      "description": "Meet the AI agents powering the X-PHERIUM digital workforce.",
+      "url": "https://xpheriumglobal.com/ai-agents"
     }
   });
 

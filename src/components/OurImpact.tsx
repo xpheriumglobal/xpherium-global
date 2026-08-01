@@ -91,7 +91,7 @@ export function OurImpact() {
         </h2>
 
         <p className="mx-auto mt-5 max-w-[560px] text-center text-[15px] sm:text-[16px] leading-[1.6] text-zinc-400">
-          Real businesses. Real impact. Real growth with <span className="font-bold bg-gradient-to-r from-[#e8c07d] via-[#f5c242] to-[#e8a84c] bg-clip-text text-transparent">X-Pherium OS.</span>
+          Real businesses. Real impact. Real growth with <span className="font-bold bg-gradient-to-r from-[#e8c07d] via-[#f5c242] to-[#e8a84c] bg-clip-text text-transparent">X-PHERIUM.</span>
         </p>
 
         <div className="relative mx-auto mt-7 flex h-[1px] w-[80px] justify-center overflow-visible">

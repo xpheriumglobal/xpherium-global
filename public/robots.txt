@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://xpherium.global/sitemap.xml
+Sitemap: https://xpheriumglobal.com/sitemap.xml

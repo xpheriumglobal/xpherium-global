@@ -203,7 +203,7 @@ export function Pricing() {
               </div>
               <div>
                 <div className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 text-[#c89845] text-xs font-bold tracking-widest uppercase mb-1">Tier 3</div>
-                <h3 className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 text-2xl font-bold text-white drop-shadow-md">X-Pherium OS</h3>
+                <h3 className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 text-2xl font-bold text-white drop-shadow-md">X-PHERIUM</h3>
               </div>
             </div>
 
@@ -233,7 +233,7 @@ export function Pricing() {
             </ul>
 
             <button onClick={() => window.dispatchEvent(new CustomEvent('openLeadForm'))} className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 w-full mt-auto group/btn flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#e8c07d] to-[#b88635] py-4 text-black font-bold transition-all shadow-[0_0_20px_rgba(200,152,69,0.3)] hover:shadow-[0_0_30px_rgba(200,152,69,0.5)] hover:brightness-110 active:scale-[0.98] relative z-10">
-              Build My X-Pherium OS
+              Build My X-PHERIUM
               <ArrowRight className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 w-5 h-5 text-black/80 transition-transform group-hover/btn:translate-x-1" strokeWidth={2.5} />
             </button>
           </motion.div>

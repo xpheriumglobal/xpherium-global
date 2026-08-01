@@ -37,14 +37,14 @@ const NotFound = lazy(() => import('./pages/NotFound'));
 
 function Home() {
   useSEO({
-    title: "X-Pherium OS",
-    description: "We Build Digital Workforces that Automate Your Business",
+    title: "Never Miss Another Customer Inquiry with AI | X-PHERIUM Global",
+    description: "Every missed inquiry is lost revenue. X-PHERIUM builds AI voice agents, chatbots, and workflow automation that respond instantly, capture every lead, and help businesses scale without adding more staff.",
     canonicalUrl: "/",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "X-Pherium OS",
-      "url": "https://xpherium.global/"
+      "name": "X-PHERIUM",
+      "url": "https://xpheriumglobal.com/"
     }
   });
 

@@ -3,20 +3,20 @@ import { useSEO } from '../hooks/useSEO';
 
 export default function Services() {
   useSEO({
-    title: "Services",
-    description: "Explore our enterprise SEO and AI search optimization services.",
+    title: "AI Automation Services That Scale Your Business | X-PHERIUM Global",
+    description: "From AI voice agents to intelligent workflow automation, X-PHERIUM Global builds automation systems that save time, reduce costs, and accelerate business growth.",
     canonicalUrl: "/services",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Services | X-Pherium OS",
+      "name": "Services | X-PHERIUM",
       "description": "Explore our enterprise SEO and AI search optimization services.",
-      "url": "https://xpherium.global/services"
+      "url": "https://xpheriumglobal.com/services"
     }
   });
 
   return (
-    <PageLayout title="Our Services" description="Explore the full range of AI solutions and services from X-Pherium OS.">
+    <PageLayout title="Our Services" description="Explore the full range of AI solutions and services from X-PHERIUM.">
       <p>
         Discover our comprehensive suite of AI automation services designed to streamline your business operations and accelerate growth.
       </p>

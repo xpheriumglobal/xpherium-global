@@ -4,7 +4,7 @@ import { useSEO } from '../hooks/useSEO';
 export function PageLayout({ title, description, children, canonicalUrl, ogType = 'website', jsonLd }: { title: string, description?: string, children: React.ReactNode, canonicalUrl?: string, ogType?: 'website' | 'article', jsonLd?: Record<string, any> }) {
   useSEO({
     title,
-    description: description || 'X-Pherium OS - We Build Digital Workforces that Automate Your Business',
+    description: description || 'X-PHERIUM - We Build Digital Workforces that Automate Your Business',
     canonicalUrl,
     ogType,
     jsonLd

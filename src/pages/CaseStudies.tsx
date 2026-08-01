@@ -4,15 +4,15 @@ import { useSEO } from '../hooks/useSEO';
 
 export default function CaseStudies() {
   useSEO({
-    title: "Case Studies",
-    description: "Read our case studies and see how X-Pherium OS has transformed businesses.",
+    title: "Real Businesses. Real AI Results. | X-PHERIUM Global",
+    description: "See how businesses increased efficiency, reduced manual work, improved customer response time, and generated measurable growth using X-PHERIUM Global solutions.",
     canonicalUrl: "/case-studies",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Case Studies | X-Pherium OS",
-      "description": "Read our case studies and see how X-Pherium OS has transformed businesses.",
-      "url": "https://xpherium.global/case-studies"
+      "name": "Case Studies | X-PHERIUM",
+      "description": "Read our case studies and see how X-PHERIUM has transformed businesses.",
+      "url": "https://xpheriumglobal.com/case-studies"
     }
   });
 

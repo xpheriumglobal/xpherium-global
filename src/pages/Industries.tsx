@@ -3,15 +3,15 @@ import { useSEO } from '../hooks/useSEO';
 
 export default function Industries() {
   useSEO({
-    title: "Industries",
-    description: "See how X-Pherium OS serves different industries with tailored AI solutions.",
+    title: "AI Automation Solutions for Every Industry | X-PHERIUM Global",
+    description: "Explore industry-specific AI automation solutions built for healthcare, home services, legal firms, agencies, real estate, education, and many more.",
     canonicalUrl: "/industries",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Industries | X-Pherium OS",
-      "description": "See how X-Pherium OS serves different industries with tailored AI solutions.",
-      "url": "https://xpherium.global/industries"
+      "name": "Industries | X-PHERIUM",
+      "description": "See how X-PHERIUM serves different industries with tailored AI solutions.",
+      "url": "https://xpheriumglobal.com/industries"
     }
   });
 

@@ -13,15 +13,15 @@ const automationFaqData = [
 
 export default function AutomationServices() {
   useSEO({
-    title: "Automation Services",
-    description: "Discover our automation services designed to streamline your business.",
+    title: "Automate Your Business Before Your Competitors Do | X-PHERIUM Global",
+    description: "Automate repetitive business operations with intelligent workflows, CRM automation, AI assistants, and integrated systems designed for modern businesses.",
     canonicalUrl: "/automation-services",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Automation Services | X-Pherium OS",
+      "name": "Automation Services | X-PHERIUM",
       "description": "Discover our automation services designed to streamline your business.",
-      "url": "https://xpherium.global/automation-services"
+      "url": "https://xpheriumglobal.com/automation-services"
     }
   });
 

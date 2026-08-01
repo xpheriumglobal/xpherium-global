@@ -4,14 +4,14 @@ import { useSEO } from '../hooks/useSEO';
 export default function Technologies() {
   useSEO({
     title: "Technologies",
-    description: "Learn about the cutting-edge technologies behind X-Pherium OS.",
+    description: "Learn about the cutting-edge technologies behind X-PHERIUM.",
     canonicalUrl: "/technologies",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Technologies | X-Pherium OS",
-      "description": "Learn about the cutting-edge technologies behind X-Pherium OS.",
-      "url": "https://xpherium.global/technologies"
+      "name": "Technologies | X-PHERIUM",
+      "description": "Learn about the cutting-edge technologies behind X-PHERIUM.",
+      "url": "https://xpheriumglobal.com/technologies"
     }
   });
 

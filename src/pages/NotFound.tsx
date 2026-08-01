@@ -4,7 +4,7 @@ import { Search } from "lucide-react";
 
 export default function NotFound() {
   useSEO({
-    title: "404 - Page Not Found | X-Pherium OS",
+    title: "404 - Page Not Found | X-PHERIUM",
     description: "The page you are looking for could not be found.",
     canonicalUrl: "/404",
   });

@@ -1,78 +1,103 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 interface SEOProps {
   title: string;
   description?: string;
   canonicalUrl?: string;
   ogImage?: string;
-  ogType?: 'website' | 'article';
+  ogType?: "website" | "article";
   jsonLd?: Record<string, any>;
 }
 
-export function useSEO({ title, description, canonicalUrl, ogImage, ogType = 'website', jsonLd }: SEOProps) {
-  useEffect(() => {
-    // Title
-    document.title = `${title} | X-Pherium OS`;
+const SITE_NAME = "X-PHERIUM";
+const BASE_URL = "https://xpheriumglobal.com";
 
-    // Helper to update or create meta tags
-    const setMetaTag = (attr: string, attrValue: string, content: string) => {
-      let meta = document.querySelector(`meta[${attr}="${attrValue}"]`);
+export function useSEO({
+  title,
+  description,
+  canonicalUrl,
+  ogImage,
+  ogType = "website",
+  jsonLd,
+}: SEOProps) {
+  useEffect(() => {
+    // Page Title
+    document.title = `${title} | ${SITE_NAME}`;
+
+    // Helper function
+    const setMetaTag = (
+      attr: "name" | "property",
+      attrValue: string,
+      content: string
+    ) => {
+      let meta = document.querySelector(
+        `meta[${attr}="${attrValue}"]`
+      ) as HTMLMetaElement | null;
+
       if (!meta) {
-        meta = document.createElement('meta');
+        meta = document.createElement("meta");
         meta.setAttribute(attr, attrValue);
         document.head.appendChild(meta);
       }
-      meta.setAttribute('content', content);
+
+      meta.setAttribute("content", content);
     };
 
     // Description
     if (description) {
-      setMetaTag('name', 'description', description);
-      setMetaTag('property', 'og:description', description);
-      setMetaTag('name', 'twitter:description', description);
+      setMetaTag("name", "description", description);
+      setMetaTag("property", "og:description", description);
+      setMetaTag("name", "twitter:description", description);
     }
 
-    // Open Graph Title
-    setMetaTag('property', 'og:title', `${title} | X-Pherium OS`);
-    setMetaTag('name', 'twitter:title', `${title} | X-Pherium OS`);
-    
-    // Open Graph Type
-    setMetaTag('property', 'og:type', ogType);
-    
-    // Open Graph Site Name
-    setMetaTag('property', 'og:site_name', 'X-Pherium OS');
-    
-    // Twitter Card
-    setMetaTag('name', 'twitter:card', 'summary_large_image');
+    // Titles
+    setMetaTag("property", "og:title", `${title} | ${SITE_NAME}`);
+    setMetaTag("name", "twitter:title", `${title} | ${SITE_NAME}`);
 
-    // Canonical URL
+    // Site Info
+    setMetaTag("property", "og:type", ogType);
+    setMetaTag("property", "og:site_name", SITE_NAME);
+
+    // Twitter
+    setMetaTag("name", "twitter:card", "summary_large_image");
+
+    // Canonical + OG URL
     if (canonicalUrl) {
-      const fullUrl = `https://xpherium.global${canonicalUrl}`;
-      let link = document.querySelector('link[rel="canonical"]');
+      const fullUrl = `${BASE_URL}${canonicalUrl}`;
+
+      let link = document.querySelector(
+        'link[rel="canonical"]'
+      ) as HTMLLinkElement | null;
+
       if (!link) {
-        link = document.createElement('link');
-        link.setAttribute('rel', 'canonical');
+        link = document.createElement("link");
+        link.rel = "canonical";
         document.head.appendChild(link);
       }
-      link.setAttribute('href', fullUrl);
-      
-      setMetaTag('property', 'og:url', fullUrl);
+
+      link.href = fullUrl;
+
+      setMetaTag("property", "og:url", fullUrl);
     }
 
-    // Open Graph Image
+    // Image
     if (ogImage) {
-      setMetaTag('property', 'og:image', ogImage);
-      setMetaTag('name', 'twitter:image', ogImage);
+      setMetaTag("property", "og:image", ogImage);
+      setMetaTag("name", "twitter:image", ogImage);
     }
 
     // JSON-LD
-    let script = document.querySelector('script[type="application/ld+json"]');
+    let script = document.querySelector(
+      'script[type="application/ld+json"]'
+    ) as HTMLScriptElement | null;
+
     if (jsonLd) {
       if (!script) {
-        script = document.createElement('script');
-        script.setAttribute('type', 'application/ld+json');
+        script = document.createElement("script");
+        script.type = "application/ld+json";
         document.head.appendChild(script);
       }
+
       script.textContent = JSON.stringify(jsonLd);
     } else if (script) {
       script.remove();

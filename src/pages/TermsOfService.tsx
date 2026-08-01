@@ -4,15 +4,15 @@ import { useSEO } from '../hooks/useSEO';
 
 export default function TermsOfService() {
   useSEO({
-    title: "Terms Of Service",
-    description: "Read the X-Pherium OS Terms of Service.",
+    title: "Terms of Service | X-PHERIUM Global",
+    description: "Read the terms governing the use of X-PHERIUM Global's website, AI solutions, automation services, and digital products.",
     canonicalUrl: "/terms",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Terms Of Service | X-Pherium OS",
-      "description": "Read the X-Pherium OS Terms of Service.",
-      "url": "https://xpherium.global/terms"
+      "name": "Terms Of Service | X-PHERIUM",
+      "description": "Read the X-PHERIUM Terms of Service.",
+      "url": "https://xpheriumglobal.com/terms"
     }
   });
 

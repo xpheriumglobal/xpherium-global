@@ -3,92 +3,162 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="X-PHERIUM - We Build Digital Workforces that Automate Your Business" />
+
+    <title>X-PHERIUM Global | AI Automation & Digital Workforce</title>
+
+    <meta
+      name="description"
+      content="Never miss another customer inquiry. X-PHERIUM Global builds AI voice agents, workflow automation, and intelligent digital workforces that help businesses scale."
+    />
+
     <meta name="theme-color" content="#050507" />
-    <meta name="application-name" content="X-PHERIUM" />
-    <meta name="author" content="X-PHERIUM" />
+    <meta name="application-name" content="X-PHERIUM Global" />
+    <meta name="author" content="X-PHERIUM Global" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="google-site-verification" content="google0a771dad20348fb0" />
     
-    <!-- Security Headers via Meta -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https://res.cloudinary.com https://fonts.googleapis.com https://fonts.gstatic.com https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net https://snap.licdn.com https://px.ads.linkedin.com https://www.clarity.ms https://c.bing.com https://c.clarity.ms; img-src 'self' data: https://res.cloudinary.com https://www.google-analytics.com https://www.facebook.com https://px.ads.linkedin.com https://c.bing.com https://c.clarity.ms; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.com https://px.ads.linkedin.com https://w.clarity.ms" />
+    <!-- Security -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https://res.cloudinary.com https://fonts.googleapis.com https://fonts.gstatic.com https://www.google-analytics.com https://www.googletagmanager.com https://www.clarity.ms; img-src 'self' data: https://res.cloudinary.com https://www.google-analytics.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://w.clarity.ms;"
+    />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <!-- Permissions Policy for standard web apps -->
-    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
+    <meta
+      name="referrer"
+      content="strict-origin-when-cross-origin"
+    />
+    <meta
+      http-equiv="Permissions-Policy"
+      content="geolocation=(), microphone=(), camera=()"
+    />
 
-    <!-- Internationalization -->
-    <link rel="alternate" hreflang="en" href="/" />
-    <link rel="alternate" hreflang="x-default" href="/" />
-    
-    <!-- PWA -->
+    <!-- Canonical & Languages -->
+    <link rel="canonical" href="https://xpheriumglobal.com/" />
+    <link rel="alternate" hreflang="en" href="https://xpheriumglobal.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://xpheriumglobal.com/" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://xpheriumglobal.com/" />
+    <meta property="og:title" content="X-PHERIUM Global | AI Automation & Digital Workforce" />
+    <meta property="og:description" content="Never miss another customer inquiry. X-PHERIUM Global builds AI voice agents, workflow automation, and intelligent digital workforces that help businesses scale." />
+    <meta property="og:image" content="https://xpheriumglobal.com/og-image.webp" />
+    <meta property="og:site_name" content="X-PHERIUM Global" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@xpheriumglobal" />
+    <meta name="twitter:creator" content="@xpheriumglobal" />
+    <meta name="twitter:title" content="X-PHERIUM Global | AI Automation & Digital Workforce" />
+    <meta name="twitter:description" content="Never miss another customer inquiry. X-PHERIUM Global builds AI voice agents, workflow automation, and intelligent digital workforces that help businesses scale." />
+    <meta name="twitter:image" content="https://xpheriumglobal.com/og-image.webp" />
+
+    <!-- AI Search & Entity Metadata -->
+    <meta name="publisher" content="X-PHERIUM Global" />
+    <meta name="creator" content="X-PHERIUM Global" />
+
+    <!-- PWA & Favicon -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#050507" />
 
+    <!-- Performance -->
     <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
     <link rel="dns-prefetch" href="https://res.cloudinary.com" />
-    
-    <!-- Analytics Preparation (Defer/Async) -->
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true });
+    <link rel="preload" href="/logo.webp" as="image" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://xpheriumglobal.com/#organization",
+            "name": "X-PHERIUM Global",
+            "url": "https://xpheriumglobal.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://xpheriumglobal.com/logo.webp",
+              "width": 512,
+              "height": 512
+            },
+            "foundingDate": "2025",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "email": "support@xpheriumglobal.com",
+              "contactType": "customer support"
+            },
+            "sameAs": [
+              "https://linkedin.com/company/xpheriumglobal",
+              "https://github.com/xpheriumglobal",
+              "https://www.youtube.com/@xpheriumglobal",
+              "https://x.com/xpheriumglobal",
+              "https://www.facebook.com/xpheriumglobal"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://xpheriumglobal.com/#website",
+            "url": "https://xpheriumglobal.com/",
+            "name": "X-PHERIUM Global",
+            "publisher": {
+              "@id": "https://xpheriumglobal.com/#organization"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://xpheriumglobal.com/search?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://xpheriumglobal.com/#webpage",
+            "url": "https://xpheriumglobal.com/",
+            "name": "X-PHERIUM Global | AI Automation & Digital Workforce",
+            "description": "Never miss another customer inquiry. X-PHERIUM Global builds AI voice agents, workflow automation, and intelligent digital workforces that help businesses scale.",
+            "isPartOf": {
+              "@id": "https://xpheriumglobal.com/#website"
+            },
+            "about": {
+              "@id": "https://xpheriumglobal.com/#organization"
+            }
+          }
+        ]
+      }
     </script>
 
+    <!-- Tracking Hooks (GTM, Clarity, GA4) -->
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    })(window,document,'script','dataLayer','GTM-T5HZ74MB');</script>
+    <!-- End Google Tag Manager -->
     
     <!-- Microsoft Clarity -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
           c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
           t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
           y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "XXXXXXXXXX");
-    </script>
-    
-    <!-- Meta Pixel Code Placeholder -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'XXXXXXXXXXXXXXX');
-    fbq('track', 'PageView');
-    </script>
-    <!-- LinkedIn Insight Tag Placeholder -->
-    <script type="text/javascript">
-    _linkedin_partner_id = "XXXXXXX";
-    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-    </script><script type="text/javascript">
-    (function(l) {
-    if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
-    window.lintrk.q=[]}
-    var s = document.getElementsByTagName("script")[0];
-    var b = document.createElement("script");
-    b.type = "text/javascript";b.async = true;
-    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-    s.parentNode.insertBefore(b, s);})(window.lintrk);
-    </script>
-    
-    <title>X-PHERIUM | Digital Workforce</title>
+      })(window, document, "clarity", "script", "XXXXXXX");
+    </script> -->
+    <!-- End Microsoft Clarity -->
   </head>
+
   <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5HZ74MB"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

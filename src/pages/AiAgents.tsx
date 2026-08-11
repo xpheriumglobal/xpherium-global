@@ -11,7 +11,7 @@ export default function AiAgents() {
       "@type": "WebPage",
       "name": "Ai Agents | X-PHERIUM",
       "description": "Meet the AI agents powering the X-PHERIUM digital workforce.",
-      "url": "https://xpheriumglobal.com/ai-agents"
+      "url": "https://www.xpheriumglobal.com/ai-agents"
     }
   });
 

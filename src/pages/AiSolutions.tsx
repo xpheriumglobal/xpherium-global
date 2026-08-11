@@ -13,7 +13,7 @@ export default function AiSolutions() {
       "@type": "WebPage",
       "name": "Ai Solutions | X-PHERIUM",
       "description": "Explore our AI solutions for enterprise automation and search optimization.",
-      "url": "https://xpheriumglobal.com/ai-solutions"
+      "url": "https://www.xpheriumglobal.com/ai-solutions"
     }
   });
 

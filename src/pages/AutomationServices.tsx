@@ -21,7 +21,7 @@ export default function AutomationServices() {
       "@type": "WebPage",
       "name": "Automation Services | X-PHERIUM",
       "description": "Discover our automation services designed to streamline your business.",
-      "url": "https://xpheriumglobal.com/automation-services"
+      "url": "https://www.xpheriumglobal.com/automation-services"
     }
   });
 

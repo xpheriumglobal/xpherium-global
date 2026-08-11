@@ -11,7 +11,7 @@ export default function Careers() {
       "@type": "WebPage",
       "name": "Careers | X-PHERIUM",
       "description": "Join the team at X-PHERIUM and build the digital workforce.",
-      "url": "https://xpheriumglobal.com/careers"
+      "url": "https://www.xpheriumglobal.com/careers"
     }
   });
 

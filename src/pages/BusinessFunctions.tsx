@@ -11,7 +11,7 @@ export default function BusinessFunctions() {
       "@type": "WebPage",
       "name": "Business Functions | X-PHERIUM",
       "description": "Optimize your business functions with our digital workforce automation.",
-      "url": "https://xpheriumglobal.com/business-functions"
+      "url": "https://www.xpheriumglobal.com/business-functions"
     }
   });
 

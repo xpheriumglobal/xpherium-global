@@ -11,7 +11,7 @@ export default function Services() {
       "@type": "WebPage",
       "name": "Services | X-PHERIUM",
       "description": "Explore our enterprise SEO and AI search optimization services.",
-      "url": "https://xpheriumglobal.com/services"
+      "url": "https://www.xpheriumglobal.com/services"
     }
   });
 

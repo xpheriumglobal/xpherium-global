@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 
 interface SEOProps {
   title: string;
@@ -7,10 +7,11 @@ interface SEOProps {
   ogImage?: string;
   ogType?: "website" | "article";
   jsonLd?: Record<string, any>;
+  noIndex?: boolean;
 }
 
 const SITE_NAME = "X-PHERIUM";
-const BASE_URL = "https://xpheriumglobal.com";
+const BASE_URL = "https://www.xpheriumglobal.com";
 
 export function useSEO({
   title,
@@ -19,12 +20,13 @@ export function useSEO({
   ogImage,
   ogType = "website",
   jsonLd,
+  noIndex = false,
 }: SEOProps) {
-  useEffect(() => {
+  useLayoutEffect(() => {
     // Page Title
     document.title = `${title} | ${SITE_NAME}`;
 
-    // Helper function
+    // Helper function for meta tags
     const setMetaTag = (
       attr: "name" | "property",
       attrValue: string,
@@ -61,9 +63,25 @@ export function useSEO({
     // Twitter
     setMetaTag("name", "twitter:card", "summary_large_image");
 
+    // Robots
+    if (noIndex) {
+      setMetaTag("name", "robots", "noindex, nofollow");
+    } else {
+      setMetaTag(
+        "name",
+        "robots",
+        "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      );
+    }
+
     // Canonical + OG URL
     if (canonicalUrl) {
-      const fullUrl = `${BASE_URL}${canonicalUrl}`;
+      const normalizedPath =
+        canonicalUrl === "/"
+          ? "/"
+          : canonicalUrl.replace(/\/+$/, "");
+
+      const fullUrl = `${BASE_URL}${normalizedPath}`;
 
       let link = document.querySelector(
         'link[rel="canonical"]'
@@ -78,6 +96,14 @@ export function useSEO({
       link.href = fullUrl;
 
       setMetaTag("property", "og:url", fullUrl);
+    } else {
+      const existingCanonical = document.querySelector(
+        'link[rel="canonical"]'
+      ) as HTMLLinkElement | null;
+
+      if (existingCanonical) {
+        existingCanonical.remove();
+      }
     }
 
     // Image
@@ -102,5 +128,13 @@ export function useSEO({
     } else if (script) {
       script.remove();
     }
-  }, [title, description, canonicalUrl, ogImage, ogType, jsonLd]);
+  }, [
+    title,
+    description,
+    canonicalUrl,
+    ogImage,
+    ogType,
+    jsonLd,
+    noIndex,
+  ]);
 }

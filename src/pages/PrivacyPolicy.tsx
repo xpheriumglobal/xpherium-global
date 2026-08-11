@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
       "@type": "WebPage",
       "name": "Privacy Policy | X-PHERIUM",
       "description": "Read the X-PHERIUM Privacy Policy.",
-      "url": "https://xpheriumglobal.com/privacy"
+      "url": "https://www.xpheriumglobal.com/privacy"
     }
   });
 

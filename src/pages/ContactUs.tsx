@@ -12,7 +12,7 @@ export default function ContactUs() {
       "@type": "WebPage",
       "name": "Contact Us | X-PHERIUM",
       "description": "Contact X-PHERIUM to start building your digital workforce.",
-      "url": "https://xpheriumglobal.com/contact"
+      "url": "https://www.xpheriumglobal.com/contact"
     }
   });
 

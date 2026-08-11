@@ -43,7 +43,7 @@ function Home() {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "X-PHERIUM",
-      "url": "https://xpheriumglobal.com/"
+      "url": "https://www.xpheriumglobal.com/"
     }
   });
 

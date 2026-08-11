@@ -12,7 +12,7 @@ export default function AboutUs() {
       "@type": "AboutPage",
       "name": "About X-PHERIUM",
       "description": "Learn more about X-PHERIUM, our mission, vision, and the team behind the digital workforce automation.",
-      "url": "https://xpheriumglobal.com/about"
+      "url": "https://www.xpheriumglobal.com/about"
     }
   });
 

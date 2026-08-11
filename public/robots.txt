@@ -1,4 +1,4 @@
-# https://xpheriumglobal.com/robots.txt
+# https://www.xpheriumglobal.com/robots.txt
 
 User-agent: *
 Allow: /
@@ -10,4 +10,4 @@ Disallow: /static/
 Disallow: /*?*
 
 # Explicit Sitemap declaration
-Sitemap: https://xpheriumglobal.com/sitemap.xml
+Sitemap: https://www.xpheriumglobal.com/sitemap.xml

@@ -11,7 +11,7 @@ export default function Industries() {
       "@type": "WebPage",
       "name": "Industries | X-PHERIUM",
       "description": "See how X-PHERIUM serves different industries with tailored AI solutions.",
-      "url": "https://xpheriumglobal.com/industries"
+      "url": "https://www.xpheriumglobal.com/industries"
     }
   });
 

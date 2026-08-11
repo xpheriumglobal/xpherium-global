@@ -12,7 +12,7 @@ export default function CaseStudies() {
       "@type": "WebPage",
       "name": "Case Studies | X-PHERIUM",
       "description": "Read our case studies and see how X-PHERIUM has transformed businesses.",
-      "url": "https://xpheriumglobal.com/case-studies"
+      "url": "https://www.xpheriumglobal.com/case-studies"
     }
   });
 

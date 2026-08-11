@@ -12,7 +12,7 @@ export default function TermsOfService() {
       "@type": "WebPage",
       "name": "Terms Of Service | X-PHERIUM",
       "description": "Read the X-PHERIUM Terms of Service.",
-      "url": "https://xpheriumglobal.com/terms"
+      "url": "https://www.xpheriumglobal.com/terms"
     }
   });
 

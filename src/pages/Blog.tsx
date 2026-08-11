@@ -11,7 +11,7 @@ export default function Blog() {
       "@type": "WebPage",
       "name": "Blog | X-PHERIUM",
       "description": "Read the latest insights and news from X-PHERIUM.",
-      "url": "https://xpheriumglobal.com/blog"
+      "url": "https://www.xpheriumglobal.com/blog"
     }
   });
 

@@ -25,25 +25,24 @@ const tier2Features = [
 ];
 
 const tier3Features = [
-  {
-    title: 'Need a sales department?',
-    desc: 'We provide one.',
-  },
-  {
-    title: 'Need a marketing department?',
-    desc: 'We provide one.',
-  },
-  {
-    title: 'Need AI operations?',
-    desc: 'We provide one.',
-  },
-  {
-    title: 'Need Social Media Manager?',
-    desc: 'We provide one.',
-  },
+  { title: 'Need a sales department?', desc: 'We provide one.' },
+  { title: 'Need a marketing department?', desc: 'We provide one.' },
+  { title: 'Need AI operations?', desc: 'We provide one.' },
+  { title: 'Need Social Media Manager?', desc: 'We provide one.' },
 ];
 
+// ========== TRIAL TOGGLE ==========
+// true = hide section (trial mode) -> stops fetching/rendering
+// false = show section again
+const HIDE_FOR_TRIAL = true;
+// ==================================
+
 export function Pricing() {
+  // This completely stops it from fetching/rendering
+  if (HIDE_FOR_TRIAL) {
+    return null;
+  }
+
   return (
     <section id="pricing" className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 w-full bg-[#0a0a0a] pt-12 pb-24 md:pt-16 md:pb-32 px-4 md:px-8 font-sans relative overflow-hidden">
       {/* Background Ambient Glows */}
@@ -190,11 +189,8 @@ export function Pricing() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 flex flex-col h-full rounded-3xl border border-[#c89845]/60 bg-[#0c0c0c] p-8 md:p-10 shadow-[0_0_40px_rgba(200,152,69,0.15)] relative group overflow-hidden md:col-span-2 lg:col-span-1"
           >
-            {/* Glow effects */}
             <div className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,rgba(200,152,69,0.15),transparent_60%)] pointer-events-none" />
             <div className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 absolute inset-0 bg-gradient-to-b from-[#c89845]/5 to-transparent pointer-events-none" />
-            
-            {/* Inner top border highlight */}
             <div className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-[#c89845] to-transparent opacity-50" />
 
             <div className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 flex items-center gap-5 mb-8 relative z-10">
@@ -208,21 +204,15 @@ export function Pricing() {
             </div>
 
             <div className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 mb-8 pb-8 border-b border-zinc-800/80 relative z-10">
-              <p className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 text-[#c89845] font-medium mb-3 text-[15px]">
-                We automate. You dominate.
-              </p>
-              <p className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 text-zinc-400 text-sm leading-relaxed">
-                We Hold Mastery to automate almost anything. Describe the business problem. We assembles the right combination of AI, software, specialists, and processes to solve it.
-              </p>
+              <p className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 text-[#c89845] font-medium mb-3 text-[15px]">We automate. You dominate.</p>
+              <p className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 text-zinc-400 text-sm leading-relaxed">We Hold Mastery to automate almost anything. Describe the business problem. We assembles the right combination of AI, software, specialists, and processes to solve it.</p>
             </div>
 
             <ul className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 flex flex-col gap-6 mb-10 flex-1 relative z-10">
               {tier3Features.map((feature, i) => (
                 <li key={i} className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 flex items-start gap-4">
                   <div className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 w-6 h-6 shrink-0 rounded-full bg-[#c89845]/10 flex items-center justify-center mt-0.5">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 text-[#c89845]">
-                      <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z" fill="currentColor" />
-                    </svg>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 text-[#c89845]"><path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z" fill="currentColor" /></svg>
                   </div>
                   <div className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 flex flex-col">
                     <span className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 text-zinc-200 text-[15px] font-medium leading-snug">{feature.title}</span>
@@ -237,7 +227,6 @@ export function Pricing() {
               <ArrowRight className="focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 w-5 h-5 text-black/80 transition-transform group-hover/btn:translate-x-1" strokeWidth={2.5} />
             </button>
           </motion.div>
-
         </div>
       </div>
     </section>

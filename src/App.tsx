@@ -7,6 +7,7 @@ import { MeetYourAiTeam } from './components/MeetYourAiTeam';
 import { Footer } from './components/Footer';
 import { LeadFormModal } from './components/LeadFormModal';
 import { ErrorBoundary } from './components/ErrorBoundary';
+import { XpheriumLyraChatbot } from './components/XpheriumLyraChatbot';
 
 // Lazy loaded components for Home page
 const WhatWeDo = lazy(() => import('./components/WhatWeDo').then(m => ({ default: m.WhatWeDo })));
@@ -103,6 +104,7 @@ export default function App() {
           </div>
           <Footer />
           <LeadFormModal />
+          <XpheriumLyraChatbot />
         </main>
       </BrowserRouter>
     </ErrorBoundary>
